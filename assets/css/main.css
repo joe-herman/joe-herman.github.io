@@ -4,7 +4,7 @@ body {
     margin: 60px auto;
     width: 70%;
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
-    background-color: #000000;
+    background-color:#000000;
     color: #dddddd;
     max-width: 720px;
     line-height: 1.4em;
@@ -12,11 +12,12 @@ body {
 
 a {
     text-decoration: none;
-    color: #ffffff;
+    color: #66d9ef;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #ffffff
 }
 
 nav {
@@ -25,10 +26,28 @@ nav {
     font-weight: bolder;
 }
 
+nav a{
+  color:#ffffff
+}
+
 .container {
     background-color: #222222;
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 1.5em;
     padding-right: 1.5em;
+}
+
+code {
+  color:#55dd55;
+  padding: 0px 4px;
+}
+
+pre,
+blockquote{
+    background-color:#111111;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top:0.1em;
+    padding-bottom: 0.1em;
 }
