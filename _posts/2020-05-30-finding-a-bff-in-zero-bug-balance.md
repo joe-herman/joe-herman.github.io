@@ -17,7 +17,7 @@ This is a convenient metric that management uses to gauge how each project is go
 
 ## Encouraging an unhealthy work culture
 
-Goodhart's Law states:
+[Goodhart's Law](https://en.wikipedia.org/wiki/Goodhart%27s_law) states:
 
 > "When a measure becomes a target, it ceases to be a good measure."
 
