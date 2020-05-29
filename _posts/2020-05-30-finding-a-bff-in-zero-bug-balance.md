@@ -36,12 +36,10 @@ By shaming teams for reporting bugs, Zero Bug Balance can lose its accuracy in t
 
 ## Disregard for bug severity
 
-I have an arsenal of negative experiences with  [SAFe](https://en.wikipedia.org/wiki/Scaled_agile_framework), but I'll share something _good_ from my time with it: we learned risk assesment 101. Issues were cast onto a 2-dimensional risk matrix I still begrudgingly consider when defining bug **severity**:
+I have an arsenal of negative experiences with  [SAFe](https://en.wikipedia.org/wiki/Scaled_agile_framework), but I'll share something _good_ from my time with it: we learned risk assessment 101. Issues were cast onto a 2-dimensional risk matrix I still consider when defining bug **severity**:
 
 * **probability**: likelihood or frequency that a bug occurs.
 * **impact**: how awful things get because of the bug.
-
-Naturally, two axes and four quadrants lay themselves out. Product managers rejoice: a new mechanism for categorizing otherwise intangible things appears on a whiteboard. Engineers groan about contending with yet another construct they can't write unit tests for. Each side's sentiment annihilates its counterpart, and the room achieves _zero enthusiasm balance!_
 
 Discerning severity quantifies the fear it strikes into each engineer's heart. Left to any team that values sleep, prioritizing fixes for bugs scary enough (sufficient `probability * impact`) to keep them up at night will occur naturally.
 
@@ -59,17 +57,21 @@ And his answer:
 
 A visual bug in a UI probably matters less than a data corruption bug in an API. Similarly, a bug in a component may not be worth fixing if a new component will replace it entirely. Or perhaps a bug is worth fixing _sometime_, except the person representing the entire [bus factor](https://en.wikipedia.org/wiki/Bus_factor) for that part is on vacation.
 
+In these situations, the team may accept the technical debt of solving the low-severity bugs later. Allowing some technical debt is good: it affords the option to push higher-priority features or fixes.
+
 Zero Bug Balance does not account for _acceptably_ low-severity bugs, which disregards weighing opportunity cost, and discourages the team from leveraging technical debt to prioritize shipping features or improve elsewhere.
 
 ## Zero Bug Bounce is a measure worth learning from
 
-Microsoft's Zero Bug Bounce is described in [Mike Torres' opening paragraph in his article applying it to life](http://www.refocuser.com/2009/04/bouncing-at-zero-zbb-in-life/):
+Microsoft's Zero Bug Bounce is a state of product maturity that teams strive for, described in [Mike Torres' opening paragraph in his article applying it to life](http://www.refocuser.com/2009/04/bouncing-at-zero-zbb-in-life/):
 
 > ... all active bugs in the software have been looked at and either punted or fixed – and the team’s fix rate (or the rate at which they’re able to fix bugs) is greater than the team’s incoming rate (or the rate at which new bugs are being opened).
 
-Zero Bug Bounce, while also a state that teams should strive for, differs from Zero Bug Balance in that **punting a bug** counts as fixing it, and focuses on bug finding rate relative to team capacity. However, Zero Bug Bounce is only meant to account for _new_ bugs, and is unaffected by shrinking a running bug balance.
+Zero Bug Bounce differs from Zero Bug Balance in that **punting a bug** (deferring a fix until later) counts as fixing it, and focuses on bug-finding rate relative to team capacity. However, Zero Bug Bounce is only meant to account for _new_ bugs, and is unaffected by shrinking a running bug balance.
 
-## Bugs Found and Fixed (BFF)
+## Solving with Bugs Found and Fixed (BFF)
+
+I propose a friendlier solution to Zero Bug Balance that I'm dubbing **Bugs Found and Fixed**, or **BFF**.
 
 Recall Zero Bug Balance's formula:
 
@@ -83,13 +85,21 @@ Suppose we make an operator more positive, and stopped caring about bug balances
 bff = bugs_found + bugs_fixed
 ```
 
-This is a better alternative to Zero Bug Balance, and even Zero Bug Bounce:
+This _absolutely groundbreaking_ formula is actually a better alternative to Zero Bug Balance, and even Zero Bug Bounce:
 
-* Culturally, _finding_ a bug is as important as _fixing_ (closing) a bug.
+* Culturally, _finding_ a bug is as rewarding as _fixing_ (closing) a bug.
 * It allows teams to consider opportunity cost and punt a less-severe bug as technical debt to pay down later.
 * Fixing a bug of any age, even punted ones, counts toward BFF.
-* BFF is intentionally still a small, convenient number that anyone can scramble to calculate four minutes before the monthly reports presentation starts.
+* BFF reflects changes to bug balance, obsoleting bug balance reports.
+* BFF is intentionally still a single, convenient number that anyone can scramble to calculate four minutes before the monthly reports presentation starts.
 
-At Comcast, our department is focused on better delivery. This starts with a healthy culture, and choosing what we measure plays into that. Metrics like uptime, deployment frequency, mean time to recovery, and how much sleep each team lost at night fearing an emergency page can be supplemented by counting Bugs Found and Fixed.
+Admittedly, BFF alone can be gamed by a bored engineer filing many small bugs in place of one, but a picture paints itself when combined with other metrics:
+
+* If BFF is steady but support requests are high, the team may not be dedicating time to product improvements.
+* If BFF skyrockets while deployment frequency or feature development slows, the team may be paying down technical debt.
+* If BFF stalls, uptime is awful, and deployment frequency is low, you may have bigger problems than deciding how to count bugs.
+* And if the team sleeps well and BFF is steady, you either have a mature product or no users.
+
+At Comcast, our department is focused on better delivery. This starts with a healthy culture, and choosing what we measure plays into that. Metrics like uptime, deployment frequency, mean time to recovery, and how much sleep each team lost at night fearing an emergency page can be supplemented by counting Bugs Found and Fixed instead of striving for the intolerance of Zero Bug Balance.
 
 Plus, who wouldn't want a good BFF?
