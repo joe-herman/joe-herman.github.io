@@ -47,6 +47,8 @@ Zero Bug Balance counts all bugs equally scary, from annoying afterthoughts to n
 
 ## Limiting teams' ability to use technical debt
 
+![Financial analogies, financial analogies everywhere](/assets/bff-financial-analogies.jpg)
+
 It would be a dream to keep no bugs around. However, here in reality, teams must weigh the opportunity cost to solve a bug, considering other priorities. [Erik Bernhardsson describes this scenario, as seen by outsiders](https://erikbern.com/2020/03/10/never-attribute-to-stupidity-that-which-is-adequately-explained-by-opportunity-cost.html):
 
 > Why is _bug Z_ still present? Hasn't it been known for a really long time? I don't understand why they aren't fixing it?
@@ -67,11 +69,13 @@ Microsoft has a concept called Zero Bug Bounce. It is a state of product maturit
 
 > ... all active bugs in the software have been looked at and either punted or fixed – and the team’s fix rate (or the rate at which they’re able to fix bugs) is greater than the team’s incoming rate (or the rate at which new bugs are being opened).
 
+![me attracted to ancient Microsoft](/assets/bff-ooh-its-ms-from-1999.jpg)
+
 Zero Bug Bounce differs from Zero Bug Balance in that **punting a bug** (deferring a fix until later) counts as fixing it, and focuses on bug-finding rate relative to team capacity. However, Zero Bug Bounce is only meant to account for _new_ bugs, and is unaffected by shrinking a running bug balance.
 
 ## Solving with Bugs Found and Fixed (BFF)
 
-I propose a friendlier solution to Zero Bug Balance that I'm dubbing **Bugs Found and Fixed**, or **BFF**.
+I propose a friendlier solution to Zero Bug Balance that I'm dubbing **Bugs Found and Fixed**, or **BFF**. Time for maths!
 
 Recall Zero Bug Balance's formula:
 
@@ -79,11 +83,9 @@ Recall Zero Bug Balance's formula:
 bug_balance[this_time] = bugs_found - bugs_fixed + bug_balance[last_time]
 ```
 
-Suppose we make an operator more positive, and stopped caring about bug balances:
+BFF makes an operator more positive, and stops caring about bug balances:
 
-```python
-bff = bugs_found + bugs_fixed
-```
+![bff = bugs_found + bugs_fixed](/assets/bff.png)
 
 This _absolutely groundbreaking_ formula is actually a better alternative to Zero Bug Balance, and even Zero Bug Bounce:
 
