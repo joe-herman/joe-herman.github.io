@@ -47,7 +47,7 @@ Zero Bug Balance counts all bugs equally scary, from annoying afterthoughts to n
 
 ## Limiting teams' ability to use technical debt
 
-It would be a dream to keep no bugs around. However, here in reality, teams must weigh the opportunity cost to solve a bug, considering other priorities. [Erik Bernhardsson describes this scenario, as seen by outsiders:](https://erikbern.com/2020/03/10/never-attribute-to-stupidity-that-which-is-adequately-explained-by-opportunity-cost.html)
+It would be a dream to keep no bugs around. However, here in reality, teams must weigh the opportunity cost to solve a bug, considering other priorities. [Erik Bernhardsson describes this scenario, as seen by outsiders](https://erikbern.com/2020/03/10/never-attribute-to-stupidity-that-which-is-adequately-explained-by-opportunity-cost.html):
 
 > Why is _bug Z_ still present? Hasn't it been known for a really long time? I don't understand why they aren't fixing it?
 
@@ -59,11 +59,11 @@ A visual bug in a UI probably matters less than a data corruption bug in an API.
 
 In these situations, the team may accept the technical debt of solving the low-severity bugs later. Allowing some technical debt is good: it affords the option to push higher-priority features or fixes.
 
-Zero Bug Balance does not account for _acceptably_ low-severity bugs, which disregards weighing opportunity cost, and discourages the team from leveraging technical debt to prioritize shipping features or improve elsewhere.
+Zero Bug Balance does not account for _acceptably_ low-severity bugs, which disregards weighing opportunity cost, and discourages the team from leveraging technical debt.
 
 ## Zero Bug Bounce is a measure worth learning from
 
-Microsoft's Zero Bug Bounce is a state of product maturity that teams strive for, described in [Mike Torres' opening paragraph in his article applying it to life](http://www.refocuser.com/2009/04/bouncing-at-zero-zbb-in-life/):
+Microsoft has a concept called Zero Bug Bounce. It is a state of product maturity that teams strive for, described in [Mike Torres' opening paragraph in his article applying it to life](http://www.refocuser.com/2009/04/bouncing-at-zero-zbb-in-life/):
 
 > ... all active bugs in the software have been looked at and either punted or fixed – and the team’s fix rate (or the rate at which they’re able to fix bugs) is greater than the team’s incoming rate (or the rate at which new bugs are being opened).
 
@@ -100,6 +100,6 @@ Admittedly, BFF alone can be gamed by a bored engineer filing many small bugs in
 * If BFF stalls, uptime is awful, and deployment frequency is low, you may have bigger problems than deciding how to count bugs.
 * And if the team sleeps well and BFF is steady, you either have a mature product or no users.
 
-At Comcast, our department is focused on better delivery. This starts with a healthy culture, and choosing what we measure plays into that. Metrics like uptime, deployment frequency, mean time to recovery, and how much sleep each team lost at night fearing an emergency page can be supplemented by counting Bugs Found and Fixed instead of striving for the intolerance of Zero Bug Balance.
+At Comcast, our department is focused on better delivery. This starts with a healthy culture, and choosing what we measure plays into that. I believe metrics like uptime, deployment frequency, mean time to recovery, and how much sleep each team lost at night fearing an emergency page can be supplemented by counting Bugs Found and Fixed--instead of striving for the intolerance of Zero Bug Balance.
 
 Plus, who wouldn't want a good BFF?
