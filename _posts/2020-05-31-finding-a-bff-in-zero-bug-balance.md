@@ -36,14 +36,20 @@ By shaming teams for reporting bugs, Zero Bug Balance can lose its accuracy in t
 
 ## Disregard for bug severity
 
-I have an arsenal of negative experiences with  [SAFe](https://en.wikipedia.org/wiki/Scaled_agile_framework), but I'll share something _good_ from my time with it: we learned risk assessment 101. Issues were cast onto a 2-dimensional risk matrix I still consider when defining bug **severity**:
+I have an arsenal of negative experiences with  [SAFe](https://en.wikipedia.org/wiki/Scaled_agile_framework), but I'll share something _good_ from my time with it: we learned risk assessment 101. Issues were cast onto a 2-dimensional chart I still consider when defining bug **severity**:
 
 * **probability**: likelihood or frequency that a bug occurs.
 * **impact**: how awful things get because of the bug.
 
-Discerning severity quantifies the fear it strikes into each engineer's heart. Left to any team that values sleep, prioritizing fixes for bugs scary enough (sufficient `probability * impact`) to keep them up at night will occur naturally.
+![severity = probability * impact = fear_induced_insomnia](/assets/bff-risk-assessment-101.png)
 
-Zero Bug Balance counts all bugs equally scary, from annoying afterthoughts to nightmares. This isn't necessarily bad, but the implications of allowing none may be.
+In my experience, bug "severity" is actually "fear-induced-insomnia." Left to any team that values sleep, prioritizing fixes for bugs scary enough (sufficient `probability * impact`) to keep them up at night will occur naturally.
+
+This is the same chart for Zero Bug Balance:
+
+![severity = yes](/assets/bff-risk-assessment-zbb.png)
+
+Penalizing bugs of any severity means Zero Bug Balance treats annoying afterthoughts the same as nightmares. This has its own implications.
 
 ## Limiting teams' ability to use technical debt
 
