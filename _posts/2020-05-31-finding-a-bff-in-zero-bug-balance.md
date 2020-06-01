@@ -53,9 +53,7 @@ Penalizing bugs of any severity means Zero Bug Balance treats annoying afterthou
 
 ## Limiting teams' ability to use technical debt
 
-![Financial analogies, financial analogies everywhere](/assets/bff-financial-analogies.jpg)
-
-It would be a dream to keep no bugs around. However, here in reality, teams weigh the opportunity cost to solve a bug. Severity and difficulty compete with other priorities. [Erik Bernhardsson describes this scenario, as seen by outsiders](https://erikbern.com/2020/03/10/never-attribute-to-stupidity-that-which-is-adequately-explained-by-opportunity-cost.html):
+It would be a dream to keep no bugs around. However, here in reality, teams weigh the opportunity cost to solve a bug. Bugfixes compete with other priorities. [Erik Bernhardsson describes this scenario, as seen by outsiders](https://erikbern.com/2020/03/10/never-attribute-to-stupidity-that-which-is-adequately-explained-by-opportunity-cost.html):
 
 > Why is _bug Z_ still present? Hasn't it been known for a really long time? I don't understand why they aren't fixing it?
 
