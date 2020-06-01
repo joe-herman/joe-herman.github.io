@@ -3,7 +3,7 @@ layout: post
 title: "Finding a BFF in Zero Bug Balance"
 ---
 
-I'm a software engineer. In my department, we have a metric called **Zero Bug Balance** intended to increase our software quality.
+I'm a software engineer. In my department, we track a metric called **Zero Bug Balance** intended to increase our software quality.
 
 Periodically, we:
 
@@ -49,7 +49,7 @@ Zero Bug Balance counts all bugs equally scary, from annoying afterthoughts to n
 
 ![Financial analogies, financial analogies everywhere](/assets/bff-financial-analogies.jpg)
 
-It would be a dream to keep no bugs around. However, here in reality, teams must weigh the opportunity cost to solve a bug, considering other priorities. [Erik Bernhardsson describes this scenario, as seen by outsiders](https://erikbern.com/2020/03/10/never-attribute-to-stupidity-that-which-is-adequately-explained-by-opportunity-cost.html):
+It would be a dream to keep no bugs around. However, here in reality, teams weigh the opportunity cost to solve a bug. Severity and difficulty compete with other priorities. [Erik Bernhardsson describes this scenario, as seen by outsiders](https://erikbern.com/2020/03/10/never-attribute-to-stupidity-that-which-is-adequately-explained-by-opportunity-cost.html):
 
 > Why is _bug Z_ still present? Hasn't it been known for a really long time? I don't understand why they aren't fixing it?
 
@@ -57,7 +57,7 @@ And his answer:
 
 > Of course, why these things never happened is that _something else was more important._
 
-A visual bug in a UI probably matters less than a data corruption bug in an API. Similarly, a bug in a component may not be worth fixing if a new component will replace it entirely. Or perhaps a bug is worth fixing _sometime_, except the person representing the entire [bus factor](https://en.wikipedia.org/wiki/Bus_factor) for that part is on vacation.
+A visual bug in a UI probably matters less than a data corruption bug in an API. Similarly, a bug in a component may not be worth fixing if a new component will obsolete it soon. Or perhaps a bug is worth fixing _sometime_, except the person representing the entire [bus factor](https://en.wikipedia.org/wiki/Bus_factor) for that part is on vacation.
 
 In these situations, the team may accept the technical debt of solving the low-severity bugs later. Allowing some technical debt is good: it affords the option to push higher-priority features or fixes.
 
@@ -75,7 +75,7 @@ Zero Bug Bounce differs from Zero Bug Balance in that **punting a bug** (deferri
 
 ## Solving with Bugs Found and Fixed (BFF)
 
-I propose a friendlier solution to Zero Bug Balance that I'm dubbing **Bugs Found and Fixed**, or **BFF**. Time for maths!
+I propose a friendlier solution to Zero Bug Balance that I'm dubbing **Bugs Found and Fixed**, or **BFF**.
 
 Recall Zero Bug Balance's formula:
 
@@ -83,7 +83,7 @@ Recall Zero Bug Balance's formula:
 bug_balance[this_time] = bugs_found - bugs_fixed + bug_balance[last_time]
 ```
 
-BFF makes an operator more positive, and stops caring about bug balances:
+BFF makes an operator more positive, and stops caring about bug balances. Behold:
 
 ![bff = bugs_found + bugs_fixed](/assets/bff.png)
 
@@ -92,7 +92,7 @@ This _absolutely groundbreaking_ formula is actually a better alternative to Zer
 * Culturally, _finding_ a bug is as rewarding as _fixing_ (closing) a bug.
 * It allows teams to consider opportunity cost and punt a less-severe bug as technical debt to pay down later.
 * Fixing a bug of any age, even punted ones, counts toward BFF.
-* BFF reflects changes to bug balance, obsoleting bug balance reports.
+* BFF replaces bug balance reports, as it already sums changes to bug balance.
 * BFF is intentionally still a single, convenient number that anyone can scramble to calculate four minutes before the monthly reports presentation starts.
 
 Admittedly, BFF alone can be gamed by a bored engineer filing many small bugs in place of one, but a picture paints itself when combined with other metrics:
