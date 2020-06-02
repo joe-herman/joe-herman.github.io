@@ -3,7 +3,9 @@ layout: post
 title: "Finding a BFF in Zero Bug Balance"
 ---
 
-I'm a software engineer. In my department, we track a metric called **Zero Bug Balance** intended to increase our software quality.
+_How do we measure software bugs in a healthier way?_
+
+I'm a software engineer. I've experienced a metric called **Zero Bug Balance** intended to increase our software quality.
 
 Periodically, we:
 
@@ -28,7 +30,7 @@ With Zero Bug Balance...
 * fixing bugs looks good
 * keeping bugs looks bad
 
-To our department's credit, nothing very bad happens if our bug balance is nonzero, aside from the public shame of admitting we created more than zero bugs (sometimes a lot more).
+Luckily in our case, nothing very bad happens if our bug balance is nonzero, aside from the public shame of admitting we created more than zero bugs (sometimes a lot more).
 
 The shame largely works--we've felt it when filing a bug. Unfortunately, I have been cautioned about labeling issues as "bugs" because we're chasing Zero Bug Balance, and `last_time` we had bad numbers. Alternatives have included filing a card without _labeling_ it as a bug, or just mentally noting its existence and forgetting it until it happens again.
 
@@ -43,13 +45,13 @@ I have an arsenal of negative experiences with  [SAFe](https://en.wikipedia.org/
 
 ![severity = probability * impact = fear_induced_insomnia](/assets/bff-risk-assessment-101.png)
 
-In my experience, bug "severity" is actually "fear-induced-insomnia." Left to any team that values sleep, prioritizing fixes for bugs scary enough (sufficient `probability * impact`) to keep them up at night will occur naturally.
+In my experience, not only is `severity = probability * impact`, it is also equivalent to "fear-induced insomnia." Teams that value sleep will naturally prioritize fixes for bugs severe (scary) enough to keep them up at night.
 
-This is the same chart for Zero Bug Balance:
+Meanwhile, this is the severity chart Zero Bug Balance encourages:
 
 ![severity = yes](/assets/bff-risk-assessment-zbb.png)
 
-Penalizing bugs of any severity means Zero Bug Balance treats annoying afterthoughts the same as nightmares. This has its own implications.
+Equally penalizing bugs of any severity means Zero Bug Balance treats trivial annoyances the same as nightmares. Fixing a nightmare into an annoyance counts for nothing.
 
 ## Limiting teams' ability to use technical debt
 
@@ -106,6 +108,8 @@ Admittedly, BFF alone can be gamed by a bored engineer filing many small bugs in
 * If BFF stalls, uptime is awful, and deployment frequency is low, you may have bigger problems than deciding how to count bugs.
 * And if the team sleeps well and BFF is steady, you either have a mature product or no users.
 
-At Comcast, our department is focused on better delivery. This starts with a healthy culture, and choosing what we measure plays into that. I believe metrics like uptime, deployment frequency, mean time to recovery, and how much sleep each team lost at night fearing an emergency page can be supplemented by counting Bugs Found and Fixed--instead of striving for the intolerance of Zero Bug Balance.
+Choosing what we measure plays into delivering a healthy culture.
+
+I believe metrics like uptime, deployment frequency, mean time to recovery, and how much sleep each team lost at night fearing an emergency page can be supplemented by counting Bugs Found and Fixed--instead of striving for the intolerance of Zero Bug Balance.
 
 Plus, who wouldn't want a good BFF?
