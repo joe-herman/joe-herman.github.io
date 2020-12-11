@@ -108,8 +108,6 @@ Admittedly, BFF alone can be gamed by a bored engineer filing many small bugs in
 * If BFF stalls, uptime is awful, and deployment frequency is low, you may have bigger problems than deciding how to count bugs.
 * And if the team sleeps well and BFF is steady, you either have a mature product or no users.
 
-Choosing what we measure plays into delivering a healthy culture.
-
-I believe metrics like uptime, deployment frequency, mean time to recovery, and how much sleep each team lost at night fearing an emergency page can be supplemented by counting Bugs Found and Fixed--instead of striving for the intolerance of Zero Bug Balance.
+Deciding what we measure plays into delivering a healthy culture. Particularly when combined with other metrics, Bugs Found and Fixed is a healthier alternative to the intolerance of Zero Bug Balance.
 
 Plus, who wouldn't want a good BFF?
