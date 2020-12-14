@@ -38,14 +38,18 @@ By shaming teams for reporting bugs, Zero Bug Balance can lose its accuracy in t
 
 ## Disregard for bug severity
 
-I have an arsenal of negative experiences with  [SAFe](https://en.wikipedia.org/wiki/Scaled_agile_framework), but I'll share something _good_ from my time with it: we learned risk assessment 101. Issues were cast onto a 2-dimensional chart I still consider when defining bug **severity**:
+I have an arsenal of negative experiences with  [SAFe](https://en.wikipedia.org/wiki/Scaled_agile_framework), but I'll share something _good_ from my time with it: we learned risk assessment 101. Severity can be defined as the product of **probability** and **impact**:
 
 * **probability**: likelihood or frequency that a bug occurs.
 * **impact**: how awful things get because of the bug.
 
-![severity = probability * impact = fear_induced_insomnia](/assets/bff-risk-assessment-101.png)
+Additionally, teams I've worked with typically prefer sleep over midnight emergency pages, which we can sum up as:
 
-In my experience, not only is `severity = probability * impact`, it is also equivalent to "fear-induced insomnia." Teams that value sleep will naturally prioritize fixes for bugs severe (scary) enough to keep them up at night.
+```severity = probability * impact = fear_induced_insomnia```
+
+With BFF, these relationships yield the following chart:
+
+![severity = probability * impact = fear_induced_insomnia](/assets/bff-risk-assessment-101.png)
 
 Meanwhile, this is the severity chart Zero Bug Balance encourages:
 
