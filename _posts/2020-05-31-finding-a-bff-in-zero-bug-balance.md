@@ -47,13 +47,14 @@ Additionally, teams I've worked with typically prefer sleep over midnight emerge
 
 ```severity = probability * impact = fear_induced_insomnia```
 
-With BFF, these relationships yield the following chart:
-
-![severity = probability * impact = fear_induced_insomnia](/assets/bff-risk-assessment-101.png)
-
-Meanwhile, this is the severity chart Zero Bug Balance encourages:
+This is the severity chart Zero Bug Balance encourages:
 
 ![severity = yes](/assets/bff-risk-assessment-zbb.png)
+
+
+In contrast to Zero Bug Balance, reality yields the following chart:
+
+![severity = probability * impact = fear_induced_insomnia](/assets/bff-risk-assessment-101.png)
 
 Equally penalizing bugs of any severity means Zero Bug Balance treats trivial annoyances the same as nightmares. Fixing a nightmare into an annoyance counts for nothing.
 

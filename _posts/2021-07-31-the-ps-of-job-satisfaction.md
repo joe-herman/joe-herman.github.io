@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Ps of a Job"
+title: "The Ps of Job Satisfaction"
 ---
 
 **People** - Do you like your team? Your manager? The people you interact with and are influenced by daily?
