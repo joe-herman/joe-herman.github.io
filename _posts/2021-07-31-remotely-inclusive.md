@@ -3,7 +3,7 @@ layout: post
 title: "Remotely Inclusive Best Practices"
 ---
 
-A list of things I've found that made hybrid remote teams remotely successful.
+A list of things I've found that made hybrid and fully remote teams remotely successful.
 
 ## Meeting Culture
 * Unless it's considered just a call, turn your video on! It's nice to see you.
@@ -13,7 +13,7 @@ A list of things I've found that made hybrid remote teams remotely successful.
 * ["Zoom fatigue" is real](https://ideas.ted.com/zoom-fatigue-is-real-heres-why-video-calls-are-so-draining/). Allow bio breaks and meetingless time between meetings.
   * In my experience, meetings that start a few minutes late tend to be better than meetings that end a few minutes early.
 
-* Expect the first couple minutes of a meeting to be tech checks and banter. Everyone's audio/video checks take a moment, and remote coworkers don't get the spontaneous coffee machine chats that onsite coworkers do, so while everyone is getting settled in, say hi!
+* The opening minutes should be dedicated to tech checks and banter. Everyone's audio/video checks take a moment, and remote coworkers don't get the spontaneous coffee machine chats that onsite coworkers do, so while everyone is getting settled in, say hi!
 
 * Checklists of things to consider before meeting:
   * What's the goal of this meeting?
@@ -26,8 +26,9 @@ A list of things I've found that made hybrid remote teams remotely successful.
   * Being dozens to hundreds of milliseconds away with only one speaker at a time means only one person can speak at once. Yield to others who want a turn.
 
 * Write to the room
-  * Raise you hand to speak!
+  * Zoom and Teams let you virtually raise your hand--use it!
   * Send reactions
+  * Especially in 1:1s, ask how people are feeling. Only talking business is boring.
 
 ## Mad hax
   
@@ -42,7 +43,7 @@ The less people have to use their imagination to communicate with you, the bette
 * Clean your lens.
   * Seeing you through a fog of fingerprint smudges is not the kind of softening you want for your face!
 * Dress nicely.
-  * No one needs to know you're in pajamas ([and if you are,](https://www.youtube.com/watch?v=Ph8RpxjrPYE), invest in a good stand), but I've definitely done the "put on a nicer shirt for an interview." It shows you care enough to get ready for others.
+  * No one needs to know you're in pajamas ([and if you are,](https://www.youtube.com/watch?v=Ph8RpxjrPYE), invest in a good stand), and I've definitely done the "put on a nicer shirt for an interview." Treating your home office like your office shows you care enough to get ready for others.
 
 ### What do I throw money at?
 * Good lighting!
