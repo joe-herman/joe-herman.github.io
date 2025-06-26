@@ -18,7 +18,7 @@ Anecdotally, overemphasizing raw technical ability leads to a team of geniuses. 
 
 ## Set the tone, then let your team play
 
-Sharing these values and some general interviewing guidelines enabled recruiting to select promising candidates, while I delegated technical interviews to interview leads, each focused on a different section.
+Sharing these values and some general interviewing guidelines enabled recruiting to select promising candidates. I delegated each interview to a pilot and optional copilot, who came up with questions and criteria 
 
 ## Strength through diversity
 
@@ -45,6 +45,12 @@ This required more interviewer experience and preparation: during technical inte
 
 This was an effective indicator of a candidate's "mentorability," both as mentee and mentor, and **elevated the interview from a time sink to a potential learning experience**. Both candidate and interviewer could leave more knowledgeable about a technology or concept!
 
+
+## The results
+
+We were able to extend offers to 7 candidates for 4 positions. All had remarkable technical strengths and seemed like solid mentees, and coincidentally hailed from diverse technical and cultural backgrounds.
+
+All together, this included a couple women (one trans!), plus two people of color. For infrastructure roles, from a diversity standpoint I call this a complete success.
 
 ## tl;dr
 
