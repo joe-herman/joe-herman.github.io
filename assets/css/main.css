@@ -6,8 +6,7 @@ body {
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
     background-color:#000000;
     color: #dddddd;
-    max-width: 720px;
-    line-height: 1.4em;
+    max-width: 800px;
 }
 
 a {
@@ -39,8 +38,11 @@ nav a{
 }
 
 code {
-  color:#55dd55;
-  padding: 0px 4px;
+  color:#f8f8f2;
+}
+
+:not(pre) > code, :not(.highlight) > code {
+  color: #f92672;
 }
 
 pre,
@@ -50,6 +52,7 @@ blockquote{
     padding-right: 1em;
     padding-top:0.1em;
     padding-bottom: 0.1em;
+    overflow-x: auto;
 }
 
 blockquote{
