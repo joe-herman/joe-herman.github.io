@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Running ollama on WSL and Open WebUI on a MBA for funsies"
+title: "Running Ollama on WSL and Open WebUI on a MBA for funsies"
 ---
 
 ## Summary
-This post documents what worked for me to run an ollama in WSL on Windows, while querying it from another machine using [Open WebUI](https://github.com/open-webui/open-webui).
+This post documents what worked for me to run an Ollama in WSL on Windows, while querying it from another machine using [Open WebUI](https://github.com/open-webui/open-webui).
 
 This yields a ChatGPT-like service that runs privately and is still usable on underpowered clients.
 
@@ -75,17 +75,17 @@ This yields a ChatGPT-like service that runs privately and is still usable on un
 That's everything!
 
 ## Why?
-My poor Macbook Air (M1 with 16GB RAM/VRAM) can basically either run an LLM _or_ anything else due to the nature of shared memory. This setup lets me offload the LLM runtime to my gaming PC, which has the greatest GPU of all time, the 8-year-old GTX 1080 Ti (11GB VRAM).
+My poor Macbook Air (M1 with 16GB RAM/VRAM) can basically either run an LLM _or_ anything else due to the nature of limited shared memory. This setup offloads the LLM to the [greatest GPU of all time](https://www.youtube.com/watch?v=ghT7G_9xyDU), a GTX 1080 Ti (11GB VRAM).
 
-I wanted to run a private LLM for reasons including avoiding contributing to future training data or [odd court mandates](https://arstechnica.com/tech-policy/2025/06/openai-says-court-forcing-it-to-save-all-chatgpt-logs-is-a-privacy-nightmare/). Also, it's fun to try things just because!
+I wanted to try a private LLM for reasons including avoiding contributing to future training data or [odd court mandates](https://arstechnica.com/tech-policy/2025/06/openai-says-court-forcing-it-to-save-all-chatgpt-logs-is-a-privacy-nightmare/). Also, it's fun to try things just because!
 
-WSL allows the best of both Windows (hardware support) and Linux (UNIX-like app setup). Historically, WSL came with its own nuances for exposing applications outside of the local machine due to NAT traversal among virtual adapters. I've always struggled with port mapping and firewall forwarding on Windows, and no LLM could help me defeat the strange WSL NAT setup to externally reach a server on WSL.
+WSL allows the best of both Windows (hardware support) and Linux (UNIX-like app setup). Historically, WSL's NAT traversal and virtual adapters introduced annoyances for a server. I've always struggled with port mapping and firewalls on Windows, and no LLM could help me defeat WSL's NAT setup.
 
-Luckily, [WSL now allows](https://learn.microsoft.com/en-us/windows/wsl/wsl-config#configuration-settings-for-wslconfig) a `networkingMode = mirrored` setting, which magically rids us of any NAT traversal and greatly simplifies setup with only minor caveats.
+Luckily, [WSL now allows](https://learn.microsoft.com/en-us/windows/wsl/wsl-config#configuration-settings-for-wslconfig) a `networkingMode = mirrored` setting, which magically rids us of NAT traversal and greatly simplifies setup with only minor caveats.
 
-While I could run ollama in a Docker container, I find the WSL GPU passthrough pretty seamless, and then I don't have to deal with orchestrating ollama or Docker directly on Windows.
+While I could run Ollama in a Docker container, I find the WSL GPU passthrough pretty seamless, and then I don't have to deal with orchestrating Ollama or Docker directly on Windows.
 
-Or if you're wondering why I still have a Windows machine in 2025, I don't really know anymore either.
+As to why I still have a Windows machine in 2025, I don't really know either.
 
 ## Why not?
 Power usage is significantly better on ARM Macs.
@@ -107,6 +107,6 @@ Honestly, the best new setup is likely a new Mac with tons of extra RAM. M1's ef
 
 ## References
 * [Open WebUI](https://github.com/open-webui/open-webui)
-* [ollama](https://github.com/ollama/ollama)
+* [Ollama](https://github.com/ollama/Ollama)
 * [.wslconfig reference](https://learn.microsoft.com/en-us/windows/wsl/wsl-config#wslconfig)
 * [WSL Configuration](https://learn.microsoft.com/en-us/windows/wsl/wsl-config#configuration-settings-for-wslconfig)”
