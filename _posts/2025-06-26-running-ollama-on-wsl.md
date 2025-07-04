@@ -96,7 +96,7 @@ Power usage is significantly better on ARM Macs.
 * **M1 Max Macbook Pro:** ~50W
 * **7800x3D + GTX 1080 Ti via WSL:** ~240W
 
-Also, responses are noticeably lower quality than ChatGPT. I find myself having to clarify things to the LLM more often, which ultimately makes queries slower.
+Also, response quality is generally worse than ChatGPT. I find myself having to clarify things to the LLM more often, which ultimately makes queries slower. This is probably due to a mix of several things including ChatGPT's base prompt, default context size, gpt-4o vs gemma3/qwen3 etc.
 
 ## Would I do this again?
 Only for funsies, especially if new hardware is an option.
@@ -109,4 +109,4 @@ Honestly, the best new setup is likely a new Mac with tons of extra RAM. M1's ef
 * [Open WebUI](https://github.com/open-webui/open-webui)
 * [Ollama](https://github.com/ollama/Ollama)
 * [.wslconfig reference](https://learn.microsoft.com/en-us/windows/wsl/wsl-config#wslconfig)
-* [WSL Configuration](https://learn.microsoft.com/en-us/windows/wsl/wsl-config#configuration-settings-for-wslconfig)”
+* [WSL Configuration](https://learn.microsoft.com/en-us/windows/wsl/wsl-config#configuration-settings-for-wslconfig)
